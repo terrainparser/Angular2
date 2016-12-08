@@ -26,7 +26,7 @@ System.register(["angular2/core"], function(exports_1, context_1) {
                         selector: 'my-app'
                     }),
                     core_1.View({
-                        template: '<h2>My First Angular 2 App</h2>'
+                        templateUrl: 'app/home.html'
                     }), 
                     __metadata('design:paramtypes', [])
                 ], AppComponent);
