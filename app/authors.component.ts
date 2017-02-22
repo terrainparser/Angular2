@@ -1,18 +1,15 @@
-import {Component, View} from 'angular2/core';
+import {Component} from '@angular/core';
 import {AuthorService} from './author.service';
 
 @Component({
     selector:'authors',
     providers:[AuthorService],
-})
-
-@View({
-    template:`<div class="container-fluid"> 
+    template: `<div class="container-fluid"> 
                 <h2>
                    {{title}}
                 </h2> 
                 <ul>
-                    <li *ngFor="#author of authors"> {{author}}</li>
+                    <li *ngFor="let author of authors"> {{author}}</li>
                 </ul>
               </div>
               `
@@ -21,7 +18,7 @@ import {AuthorService} from './author.service';
 
 export class AuthorsComponent{
     authors;
-    title:"The title of the Authors Page"
+    title:string="The title of the Authors Page";
     constructor(authorsService:AuthorService){
         this.authors= authorsService.getAuthors();
     }
