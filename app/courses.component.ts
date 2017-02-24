@@ -13,7 +13,7 @@ import {CourseService} from './course.service';
                 </ul>
    </div>
             `,
-    providers:[CourseService],
+
     //directives:[AutoGrowDirective]
     
 })

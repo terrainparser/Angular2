@@ -16,7 +16,7 @@ AppComponent = __decorate([
     core_1.Component({
         selector: 'my-app',
         //directives:[CoursesComponent, AuthorsComponent],
-        template: "<div class=\"container-fluid\">\n                  <h1>My First Angular App</h1><courses></courses>\n                  <authors></authors>\n            </div>\n            "
+        template: "<div class=\"container-fluid\">\n                  <h1>My First Angular App</h1>\n                 <favorite></favorite>\n                 <favorite-heart></favorite-heart>\n                  <courses></courses>\n                  <authors></authors>\n            </div>\n            "
     })
 ], AppComponent);
 exports.AppComponent = AppComponent;
