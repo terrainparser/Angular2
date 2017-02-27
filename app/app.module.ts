@@ -10,14 +10,18 @@ import {CourseService} from './course.service';
 import {AuthorService} from './author.service';
 import {FavoriteComponent} from './favorite.component';
 import {FavoriteHeartComponent} from './favoriteHeart.component';
+import {voteComponent} from './vote.component';
+import {TweetComponent} from './tweet.component';
+import {TweetService} from './tweet.service';
 
 @NgModule({
   imports:      [ BrowserModule ],
   declarations: [ AppComponent, 
                   CoursesComponent, AuthorsComponent, 
                   AutoGrowDirective, AutoHighlightDirective,
-                  FavoriteComponent, FavoriteHeartComponent ],
-  providers:    [ CourseService, AuthorService],
+                  FavoriteComponent, FavoriteHeartComponent,
+                  voteComponent, TweetComponent],
+  providers:    [ CourseService, AuthorService, TweetService],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
