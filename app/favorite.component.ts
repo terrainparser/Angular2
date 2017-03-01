@@ -7,10 +7,10 @@ import {Component, ElementRef, Renderer} from '@angular/core'
 })
 
 export class FavoriteComponent{
-    isFavorite=false;
+    isFavorite:boolean =false;
     constructor(private el:ElementRef, private renderer:Renderer){
     }
-    onClick(){
+    onClick(): void {
         this.isFavorite=!this.isFavorite;
         console.log(this.el.nativeElement.firstChild);
 

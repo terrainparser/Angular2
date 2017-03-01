@@ -1,7 +1,7 @@
 
 
 export class TweetService{
-    getTweets(){
+    getTweets(): Twitter[] {
         return [
                     {"twitterName":"VictoriaStreet",
                         "twitterHandle":"@Victoria_Street",
@@ -25,4 +25,13 @@ export class TweetService{
                         "imageUrl":"http://lorempixel.com/100/100/people?3"},
                 ] 
     }
+}
+
+interface Twitter{
+ "twitterName":string;
+  "twitterHandle":string;
+  "tweetText":string;
+  "likeCount":string; 
+ "ilike":boolean;
+ "imageUrl":string;
 }

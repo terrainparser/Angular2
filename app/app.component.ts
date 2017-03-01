@@ -3,11 +3,16 @@ import {TweetService} from './tweet.service';
 
 @Component({
    selector: 'my-app',
-      template:`<tweet-component *ngFor="let tweet of tweets" 
-                  [ilike]="tweet.ilike" [likeCount]= "tweet.likeCount" 
-                  [twitterName]='tweet.twitterName' [twitterHandle]='tweet.twitterHandle' 
-                  [tweetText]="tweet.tweetText" [imageUrl]="tweet.imageUrl">
-                </tweet-component>`
+   template:`<zippy>
+                   <div class="zippyHeading">This is heading</div>
+                   <div class="zippyBody">This is body</div>
+                   <div class="zippyBody">This is also body</div>
+            </zippy>`
+      // template:`<tweet-component *ngFor="let tweet of tweets" 
+      //             [ilike]="tweet.ilike" [likeCount]= "tweet.likeCount" 
+      //             [twitterName]='tweet.twitterName' [twitterHandle]='tweet.twitterHandle' 
+      //             [tweetText]="tweet.tweetText" [imageUrl]="tweet.imageUrl">
+      //           </tweet-component>`
       //    template:`<div class="container-fluid">
       //                   <h1>My First Angular App</h1>
       //                  <favorite></favorite>

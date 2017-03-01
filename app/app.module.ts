@@ -13,6 +13,7 @@ import {FavoriteHeartComponent} from './favoriteHeart.component';
 import {voteComponent} from './vote.component';
 import {TweetComponent} from './tweet.component';
 import {TweetService} from './tweet.service';
+import {ZippyComponent} from './zippy.component';
 
 @NgModule({
   imports:      [ BrowserModule ],
@@ -20,7 +21,7 @@ import {TweetService} from './tweet.service';
                   CoursesComponent, AuthorsComponent, 
                   AutoGrowDirective, AutoHighlightDirective,
                   FavoriteComponent, FavoriteHeartComponent,
-                  voteComponent, TweetComponent],
+                  voteComponent, TweetComponent, ZippyComponent],
   providers:    [ CourseService, AuthorService, TweetService],
   bootstrap:    [ AppComponent ]
 })

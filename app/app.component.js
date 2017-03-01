@@ -21,7 +21,12 @@ var AppComponent = (function () {
 AppComponent = __decorate([
     core_1.Component({
         selector: 'my-app',
-        template: "<tweet-component *ngFor=\"let tweet of tweets\" \n                  [ilike]=\"tweet.ilike\" [likeCount]= \"tweet.likeCount\" \n                  [twitterName]='tweet.twitterName' [twitterHandle]='tweet.twitterHandle' \n                  [tweetText]=\"tweet.tweetText\" [imageUrl]=\"tweet.imageUrl\">\n                </tweet-component>"
+        template: "<zippy>\n                   <div class=\"zippyHeading\">This is heading</div>\n                   <div class=\"zippyBody\">This is body</div>\n                   <div class=\"zippyBody\">This is also body</div>\n            </zippy>"
+        // template:`<tweet-component *ngFor="let tweet of tweets" 
+        //             [ilike]="tweet.ilike" [likeCount]= "tweet.likeCount" 
+        //             [twitterName]='tweet.twitterName' [twitterHandle]='tweet.twitterHandle' 
+        //             [tweetText]="tweet.tweetText" [imageUrl]="tweet.imageUrl">
+        //           </tweet-component>`
         //    template:`<div class="container-fluid">
         //                   <h1>My First Angular App</h1>
         //                  <favorite></favorite>
