@@ -4,22 +4,23 @@ import {TweetService} from './tweet.service';
 
 @Component({
    selector: 'my-app',
-   template:`<zippy [isActive]=true>
-                   <div class="zippyHeading">This is heading</div>
-                   <div class="zippyBody">This is body</div>
-                   <div class="zippyBody">This is also body</div>
-            </zippy>
-            <zippy [isActive]=true >
-                   <div class="zippyHeading">This is heading</div>
-                   <div class="zippyBody">This is body</div>
-                   <div class="zippyBody">This is also body</div>
-            </zippy>
-            <zippy [isActive]=true >
-                   <div class="zippyHeading">This is heading</div>
-                   <div class="zippyBody">This is body</div>
-                   <div class="zippyBody">This is also body</div>
-            </zippy>
-            `
+   template:`<userForm></userForm>`
+//    template:`<zippy [isActive]=true>
+//                    <div class="zippyHeading">This is heading</div>
+//                    <div class="zippyBody">This is body</div>
+//                    <div class="zippyBody">This is also body</div>
+//             </zippy>
+//             <zippy [isActive]=true >
+//                    <div class="zippyHeading">This is heading</div>
+//                    <div class="zippyBody">This is body</div>
+//                    <div class="zippyBody">This is also body</div>
+//             </zippy>
+//             <zippy [isActive]=true >
+//                    <div class="zippyHeading">This is heading</div>
+//                    <div class="zippyBody">This is body</div>
+//                    <div class="zippyBody">This is also body</div>
+//             </zippy>
+//             `
       // template:`<tweet-component *ngFor="let tweet of tweets" 
       //             [ilike]="tweet.ilike" [likeCount]= "tweet.likeCount" 
       //             [twitterName]='tweet.twitterName' [twitterHandle]='tweet.twitterHandle' 
