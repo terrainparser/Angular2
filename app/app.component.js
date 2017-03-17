@@ -7,7 +7,6 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
-//import {MenuService} from './menu.service';
 var AppComponent = (function () {
     function AppComponent() {
     }
@@ -16,37 +15,7 @@ var AppComponent = (function () {
 AppComponent = __decorate([
     core_1.Component({
         selector: 'my-app',
-        template: "<userForm></userForm>"
-        //    template:`<zippy [isActive]=true>
-        //                    <div class="zippyHeading">This is heading</div>
-        //                    <div class="zippyBody">This is body</div>
-        //                    <div class="zippyBody">This is also body</div>
-        //             </zippy>
-        //             <zippy [isActive]=true >
-        //                    <div class="zippyHeading">This is heading</div>
-        //                    <div class="zippyBody">This is body</div>
-        //                    <div class="zippyBody">This is also body</div>
-        //             </zippy>
-        //             <zippy [isActive]=true >
-        //                    <div class="zippyHeading">This is heading</div>
-        //                    <div class="zippyBody">This is body</div>
-        //                    <div class="zippyBody">This is also body</div>
-        //             </zippy>
-        //             `
-        // template:`<tweet-component *ngFor="let tweet of tweets" 
-        //             [ilike]="tweet.ilike" [likeCount]= "tweet.likeCount" 
-        //             [twitterName]='tweet.twitterName' [twitterHandle]='tweet.twitterHandle' 
-        //             [tweetText]="tweet.tweetText" [imageUrl]="tweet.imageUrl">
-        //           </tweet-component>`
-        //    template:`<div class="container-fluid">
-        //                   <h1>My First Angular App</h1>
-        //                  <favorite></favorite>
-        //                  <favorite-heart></favorite-heart>
-        //                  <vote [likeCount]='35'></vote>
-        //                   <courses></courses>
-        //                   <authors></authors>
-        //             </div>
-        //             `
+        template: "\n        <change-password></change-password>\n    "
     })
 ], AppComponent);
 exports.AppComponent = AppComponent;

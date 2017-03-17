@@ -16,6 +16,9 @@ import { TweetComponent } from './tweet.component';
 import { TweetService } from './tweet.service';
 import { ZippyComponent } from './zippy.component';
 import { UserFormComponent } from './user-details-form.component';
+import { SignUpFormComponent } from './signup-form.component';
+import {PasswordChangeComponent} from './password-change.component';
+
 
 @NgModule({
   imports:      [BrowserModule, FormsModule],
@@ -23,7 +26,8 @@ import { UserFormComponent } from './user-details-form.component';
                 CoursesComponent, AuthorsComponent,
                 AutoGrowDirective, AutoHighlightDirective,
                 FavoriteComponent, FavoriteHeartComponent,
-                voteComponent, TweetComponent, ZippyComponent, UserFormComponent],
+                voteComponent, TweetComponent, ZippyComponent,
+                UserFormComponent,SignUpFormComponent, PasswordChangeComponent],
   providers:    [CourseService, AuthorService, TweetService],
   bootstrap:    [AppComponent]
 })
