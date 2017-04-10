@@ -21,7 +21,14 @@ import 'rxjs/add/observable/forkJoin';
 @Component({
     selector: 'my-app',
     // template: ` `,
-    templateUrl:'app/github-users.component.html',
+    // templateUrl:'app/github-users.component.html',
+    //templateUrl:'/app/app.component.html',
+    template:`<ul>
+                <li><a routerLink="">Home</a></li>
+                <li><a routerLink="messages">Messages</a></li>
+                <li><a routerLink="photos">Photos</a></li>
+                </ul>
+                <router-outlet></router-outlet>`,
     styles: [`.avatar{
                 width:100px;
                 height:100px;
@@ -39,22 +46,22 @@ import 'rxjs/add/observable/forkJoin';
 // })
 
 export class AppComponent {
-    isLoading=true;
-    data = { 'user': [], 'followers': [] };
-    constructor(githubUserService: GithubUsersService) {
-       console.log('initializing :'+ new Date());
-        var data = githubUserService.getUsersAndFollowers('octocat')
-            .map(res => { return { 'user': res[0], 'followers': res[1] } }).debounceTime(500);
+    // isLoading=true;
+    // data = { 'user': [], 'followers': [] };
+    // constructor(githubUserService: GithubUsersService) {
+    //    console.log('initializing :'+ new Date());
+    //     var data = githubUserService.getUsersAndFollowers('octocat')
+    //         .map(res => { return { 'user': res[0], 'followers': res[1] } }).debounceTime(500);
 
-        data.subscribe((x) => {
-            this.data = x;
-            //    this.data.user=x.user;
-            //    this.data.followers=x.followers
-        },error => console.log(error),()=> {this.isLoading=false;
-        console.log('Completed Loading:'+ new Date());});
+    //     data.subscribe((x) => {
+    //         this.data = x;
+    //         //    this.data.user=x.user;
+    //         //    this.data.followers=x.followers
+    //     },error => console.log(error),()=> {this.isLoading=false;
+    //     console.log('Completed Loading:'+ new Date());});
 
-        console.log(this.data);
-    }
+    //     console.log(this.data);
+    // }
     // form:FormGroup
     // constructor(fb:FormBuilder){
     //     this.form=fb.group({

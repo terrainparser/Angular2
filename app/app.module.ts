@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { HttpModule, JsonpModule} from '@angular/http';
+import { HttpModule, JsonpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 
 import { AuthorsComponent } from './authors.component';
@@ -20,17 +20,24 @@ import { ZippyComponent } from './zippy.component';
 import { UserFormComponent } from './user-details-form.component';
 import { SignUpFormComponent } from './signup-form.component';
 import { PasswordChangeComponent } from './password-change.component';
+import { routing } from './app.routing';
+import {HomeComponent} from './home.component';
+import {NotFoundComponent} from './not-found.component';
+import { PhotosComponent } from './photos/photos.component';
+import { MessagesComponent } from './messages/messages.component';
+
 
 
 @NgModule({
-  imports:      [BrowserModule, FormsModule, ReactiveFormsModule, HttpModule, JsonpModule],
+  imports: [BrowserModule, FormsModule, ReactiveFormsModule, HttpModule, JsonpModule, routing],
   declarations: [AppComponent,
                 CoursesComponent, AuthorsComponent,
                 AutoGrowDirective, AutoHighlightDirective,
                 FavoriteComponent, FavoriteHeartComponent,
                 voteComponent, TweetComponent, ZippyComponent,
-                UserFormComponent,SignUpFormComponent, PasswordChangeComponent],
-  providers:    [CourseService, AuthorService, TweetService,GithubUsersService],
-  bootstrap:    [AppComponent]
+                UserFormComponent, SignUpFormComponent, PasswordChangeComponent,
+                PhotosComponent, MessagesComponent, HomeComponent, NotFoundComponent],
+  providers: [CourseService, AuthorService, TweetService, GithubUsersService],
+  bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { };
