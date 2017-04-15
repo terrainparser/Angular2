@@ -3,6 +3,9 @@ import { SignUpFormComponent } from './signup-form.component';
 import { FormGroup, FormControl, FormBuilder, Validators } from '@angular/forms';
 import { Observable } from 'rxjs/Observable';
 import { GithubUsersService } from './github-users.service';
+// import { NavbarComponent } from './navbar.component';
+
+
 import 'rxjs/add/operator/debounceTime';
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/mergeMap';
@@ -20,20 +23,20 @@ import 'rxjs/add/observable/forkJoin';
 
 @Component({
     selector: 'my-app',
-    // template: ` `,
+    template: ` <router-outlet></router-outlet>`
     // templateUrl:'app/github-users.component.html',
     //templateUrl:'/app/app.component.html',
-    template:`<ul>
-                <li><a routerLink="">Home</a></li>
-                <li><a routerLink="messages">Messages</a></li>
-                <li><a routerLink="photos">Photos</a></li>
-                </ul>
-                <router-outlet></router-outlet>`,
-    styles: [`.avatar{
-                width:100px;
-                height:100px;
-                border-radius:50%;
-                };`]
+    // template:`<ul>
+    //             <li><a routerLink="">Home</a></li>
+    //             <li><a routerLink="messages">Messages</a></li>
+    //             <li><a routerLink="photos">Photos</a></li>
+    //             </ul>
+    //             <router-outlet></router-outlet>`,
+    // styles: [`.avatar{
+    //             width:100px;
+    //             height:100px;
+    //             border-radius:50%;
+    //             };`]
 })
 
 // @Component({

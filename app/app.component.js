@@ -7,6 +7,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
+// import { NavbarComponent } from './navbar.component';
 require("rxjs/add/operator/debounceTime");
 require("rxjs/add/operator/map");
 require("rxjs/add/operator/mergeMap");
@@ -37,11 +38,20 @@ var AppComponent = (function () {
 AppComponent = __decorate([
     core_1.Component({
         selector: 'my-app',
-        // template: ` `,
+        template: " <router-outlet></router-outlet>"
         // templateUrl:'app/github-users.component.html',
         //templateUrl:'/app/app.component.html',
-        template: "<ul>\n                <li><a routerLink=\"\">Home</a></li>\n                <li><a routerLink=\"messages\">Messages</a></li>\n                <li><a routerLink=\"photos\">Photos</a></li>\n                </ul>\n                <router-outlet></router-outlet>",
-        styles: [".avatar{\n                width:100px;\n                height:100px;\n                border-radius:50%;\n                };"]
+        // template:`<ul>
+        //             <li><a routerLink="">Home</a></li>
+        //             <li><a routerLink="messages">Messages</a></li>
+        //             <li><a routerLink="photos">Photos</a></li>
+        //             </ul>
+        //             <router-outlet></router-outlet>`,
+        // styles: [`.avatar{
+        //             width:100px;
+        //             height:100px;
+        //             border-radius:50%;
+        //             };`]
     })
     // @Component({
     //     selector: 'my-app',

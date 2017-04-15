@@ -21,22 +21,25 @@ import { UserFormComponent } from './user-details-form.component';
 import { SignUpFormComponent } from './signup-form.component';
 import { PasswordChangeComponent } from './password-change.component';
 import { routing } from './app.routing';
-import {HomeComponent} from './home.component';
-import {NotFoundComponent} from './not-found.component';
+import { HomeComponent } from './home.component';
+import { NotFoundComponent } from './not-found.component';
 import { PhotosComponent } from './photos/photos.component';
 import { MessagesComponent } from './messages/messages.component';
+import { NavbarComponent } from './navbar.component';
 
 
 
 @NgModule({
-  imports: [BrowserModule, FormsModule, ReactiveFormsModule, HttpModule, JsonpModule, routing],
+  imports: [BrowserModule, FormsModule, ReactiveFormsModule,
+    HttpModule, JsonpModule, routing],
   declarations: [AppComponent,
-                CoursesComponent, AuthorsComponent,
-                AutoGrowDirective, AutoHighlightDirective,
-                FavoriteComponent, FavoriteHeartComponent,
-                voteComponent, TweetComponent, ZippyComponent,
-                UserFormComponent, SignUpFormComponent, PasswordChangeComponent,
-                PhotosComponent, MessagesComponent, HomeComponent, NotFoundComponent],
+    CoursesComponent, AuthorsComponent,
+    AutoGrowDirective, AutoHighlightDirective,
+    FavoriteComponent, FavoriteHeartComponent,
+    voteComponent, TweetComponent, ZippyComponent,
+    UserFormComponent, SignUpFormComponent, PasswordChangeComponent,
+    PhotosComponent, MessagesComponent, HomeComponent, NotFoundComponent,
+    NavbarComponent],
   providers: [CourseService, AuthorService, TweetService, GithubUsersService],
   bootstrap: [AppComponent]
 })
