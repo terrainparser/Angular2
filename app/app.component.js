@@ -7,7 +7,6 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
-// import { NavbarComponent } from './navbar.component';
 require("rxjs/add/operator/debounceTime");
 require("rxjs/add/operator/map");
 require("rxjs/add/operator/mergeMap");
@@ -38,7 +37,7 @@ var AppComponent = (function () {
 AppComponent = __decorate([
     core_1.Component({
         selector: 'my-app',
-        template: " <router-outlet></router-outlet>"
+        template: "<navbar></navbar>\n                <div class=\"container\">\n                    <router-outlet></router-outlet>\n                </div>\n               "
         // templateUrl:'app/github-users.component.html',
         //templateUrl:'/app/app.component.html',
         // template:`<ul>

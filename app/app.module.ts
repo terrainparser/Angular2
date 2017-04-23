@@ -26,6 +26,10 @@ import { NotFoundComponent } from './not-found.component';
 import { PhotosComponent } from './photos/photos.component';
 import { MessagesComponent } from './messages/messages.component';
 import { NavbarComponent } from './navbar.component';
+import { UsersComponent } from './users.component';
+import { UsersService } from './users.service';
+import { PostsComponent } from './posts.component';
+import { AddUserComponent } from './add-user.component';
 
 
 
@@ -39,8 +43,9 @@ import { NavbarComponent } from './navbar.component';
     voteComponent, TweetComponent, ZippyComponent,
     UserFormComponent, SignUpFormComponent, PasswordChangeComponent,
     PhotosComponent, MessagesComponent, HomeComponent, NotFoundComponent,
-    NavbarComponent],
-  providers: [CourseService, AuthorService, TweetService, GithubUsersService],
+    NavbarComponent, UsersComponent, PostsComponent, AddUserComponent],
+  providers: [CourseService, AuthorService, TweetService,
+    GithubUsersService, UsersService],
   bootstrap: [AppComponent]
 })
 export class AppModule { };

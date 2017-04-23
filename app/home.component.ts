@@ -3,7 +3,7 @@ import {NavbarComponent} from './navbar.component';
 
 @Component({
     selector: 'home',
-    template: `<navbar></navbar>`
+    template: `<h3>Home page</h3>`
 })
 
 export class HomeComponent{

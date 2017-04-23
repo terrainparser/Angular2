@@ -3,7 +3,7 @@ import { SignUpFormComponent } from './signup-form.component';
 import { FormGroup, FormControl, FormBuilder, Validators } from '@angular/forms';
 import { Observable } from 'rxjs/Observable';
 import { GithubUsersService } from './github-users.service';
-// import { NavbarComponent } from './navbar.component';
+import { NavbarComponent } from './navbar.component';
 
 
 import 'rxjs/add/operator/debounceTime';
@@ -23,7 +23,11 @@ import 'rxjs/add/observable/forkJoin';
 
 @Component({
     selector: 'my-app',
-    template: ` <router-outlet></router-outlet>`
+    template: `<navbar></navbar>
+                <div class="container">
+                    <router-outlet></router-outlet>
+                </div>
+               `
     // templateUrl:'app/github-users.component.html',
     //templateUrl:'/app/app.component.html',
     // template:`<ul>
