@@ -30,6 +30,8 @@ import { UsersComponent } from './users.component';
 import { UsersService } from './users.service';
 import { PostsComponent } from './posts.component';
 import { AddUserComponent } from './add-user.component';
+import {PreventUnsavedChangesGuard} from './prevent-unsaved-changes-guard.service';
+
 
 
 
@@ -45,7 +47,7 @@ import { AddUserComponent } from './add-user.component';
     PhotosComponent, MessagesComponent, HomeComponent, NotFoundComponent,
     NavbarComponent, UsersComponent, PostsComponent, AddUserComponent],
   providers: [CourseService, AuthorService, TweetService,
-    GithubUsersService, UsersService],
+    GithubUsersService, UsersService,PreventUnsavedChangesGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { };
